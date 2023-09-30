@@ -82,7 +82,7 @@ function timeHandler(id) {
 }
 
 function startBreak() {
-    time = 3;
+    time = 5;
     taskName.textContent = 'Break';
     timerBreak = setInterval(() => {
         timerBreakHandler();

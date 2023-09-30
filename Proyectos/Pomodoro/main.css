@@ -1,33 +1,122 @@
+/* Asignación de variables para colores con degradado */
+:root {
+    --yass-queen-color: rgba(255, 29, 88, 0.6);
+    --sister-sister: rgba(247, 89, 144, 0.6);
+    --crown-yellow: rgba(255, 246, 133, 0.6);
+    --blue-light: rgba(0, 221, 255, 0.4);
+    --brutal-blue: rgba(0, 73, 183, 0.8);
+}
+
+/* Estilos generales */
+  * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilos para el título y subtitulo */
+#about, #subtitle, #subtitle-2 {
+    font-size: 24px;
+    color: rgb(255, 253, 253);
+    text-shadow: 0 0 10px rgba(7, 141, 218, 0.973), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+/* Estilos adicionales para el subtitulo 2 */
+#subtitle-2 {
+    line-height: 2.0;
+}
+
+  /* Estilos para el título principal */
+#about {
+    font-size: 36px;
+    background-size: 400% 100%;
+    text-align: center;
+}
+
+  /* Estilos generales para el cuerpo del documento */
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    background: linear-gradient(to top, var(--brutal-blue), var(--blue-light));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-#app #image {
-    position: absolute;
-    z-index: -1;
+  /* Estilos para el contenido principal */
+#app {
+margin-left: 300px;
+margin-top: 100px;
 }
 
-#time #value {
-    font-size: 35px;
-    font-weight: 450;
-    color: red;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px rgb(255, 30, 0),
-    0 0 82px rgb(255, 30, 0),
-    0 0 92px rgb(255, 25, 0),
-    0 0 102px rgb(255, 25, 0),
-    0 0 151px rgb(255, 30, 0);
+#app #time {
+    margin-bottom: 6px;
+    margin-top: auto;
+    color: rgb(255, 253, 253);
+    text-shadow: 0 0 10px rgba(7, 141, 218, 0.973), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
 }
 
-#time #taskName {
-    font-size: 20px;
-    font-weight: bolder;
+  /* Estilos para el botón "Agregar Tarea" */
+#bAdd {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to top, var(--brutal-blue), var(--blue-light));
+    color: #fff;
+    cursor: pointer;
 }
 
-.tasks-container #tasks {
-    font-size: 15px;
-    font-weight: lighter;
+#bAdd:hover {
+    background-color: var(--crown-yellow);
+    transform: scale(1.05);
+}
+
+#bAdd:active {
+    background-color: var(--yass-queen-color);
+}
+
+  /* Estilos para el input de tarea */
+#itTask {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    color: #333;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(to bottom, var(--brutal-blue), var(--blue-light));
+}
+
+#itTask:hover {
+    border-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#itTask:focus {
+    border-color: white;
+    outline: none;
+}
+
+/* Estilos para el botón "Start" */
+.start-button {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(to bottom, var(--brutal-blue), var(--blue-light));
+}
+
+.start-button:hover {
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.start-button:focus {
+    border-color: #2980b9;
+    outline: none;
 }
