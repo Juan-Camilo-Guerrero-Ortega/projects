@@ -43,8 +43,8 @@ body {
 
   /* Estilos para el contenido principal */
 #app {
-margin-left: 300px;
-margin-top: 100px;
+margin-left: 200px;
+margin-top: 80px;
 }
 
 #app #time {
@@ -84,7 +84,8 @@ margin-top: 100px;
     font-size: 16px;
     border: 2px solid #3498db;
     border-radius: 10px;
-    color: #333;
+    color: rgb(255, 253, 253);
+    text-shadow: 0 0 10px rgba(7, 141, 218, 0.973), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
     transition: border-color 0.3s ease, transform 0.2s ease;
     background: linear-gradient(to bottom, var(--brutal-blue), var(--blue-light));
 }
@@ -105,7 +106,8 @@ margin-top: 100px;
     font-size: 16px;
     border: 2px solid #3498db;
     border-radius: 10px;
-    color: #333;
+    color: rgb(255, 253, 253);
+    text-shadow: 0 0 10px rgba(7, 141, 218, 0.973), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
     cursor: pointer;
     transition: border-color 0.3s ease, transform 0.2s ease;
     background: linear-gradient(to bottom, var(--brutal-blue), var(--blue-light));
@@ -119,4 +121,19 @@ margin-top: 100px;
 .start-button:focus {
     border-color: #2980b9;
     outline: none;
+}
+
+.title {
+    color: rgb(255, 253, 253);
+    text-shadow: 0 0 10px rgba(7, 141, 218, 0.973), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.9);
+}
+
+.completed {
+    color: rgb(255,0,0);
+    text-shadow: 0 0 10px rgba(7, 141, 218, 0.973), 0 0 20px rgba(254, 0, 0, 0.9), 0 0 30px rgba(255, 0, 0, 0.9);
+}
+
+.break-text {
+    color: rgb(255,165,0);
+    text-shadow: 0 0 10px rgba(7, 141, 218, 0.973), 0 0 20px rgba(255,165,0, 0.9), 0 0 30px rgba(255,165,0, 0.9);
 }
